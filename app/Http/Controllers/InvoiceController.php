@@ -26,7 +26,7 @@ class InvoiceController extends Controller
 
         $file = $request->file('file');
 
-        //Excel::import(new InvoiceImport, $file);
+        Excel::import(new InvoiceImport, $file);
 
         //return Excel::toCollection(new InvoiceImport, $file);
 
